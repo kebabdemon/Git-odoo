@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <!-- Action for opening views on models -->
+        <record model="ir.actions.act_window" id="owl.action_window">
+            <field name="name">OWL Window</field>
+            <field name="res_model">sale.order.template.option</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+      ## Explicit form view definition -->
+
+        <record model="ir.actions.act_window" id="owl.action_form_view">
+            <field name="name">OWL Form View</field>
+            <field name="res_model">sale.order.template.option</field>
+            <field name="view_mode">form</field>
+            <field name="target">current</field> <!-- Opens in the current window -->
+        </record>
+
+
+        <!-- Explicit list view definition -->
+        <record model="ir.ui.view" id="owl_list_view">
+            <field name="name">OWL List</field>
+            <field name="model">sale.order.template.option</field>
+            <field name="arch" type="xml">
+                <list string="OWL List">
+                    <field name="product_id" readonly="1"/>
+                    <field name="id" readonly="1"/>
+                    <field name="display_name" readonly="1"/>
+                    <button name="owl.action_form_view" type="action" string="Edit" class="btn-primary"/>
+                </list>
+            </field>
+        </record>
+
+    </data>
+</odoo>

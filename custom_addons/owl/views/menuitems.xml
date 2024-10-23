@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+
+        <!-- Top menu item -->
+        <menuitem name="OWL" id="owl_menu_root"/>
+
+        <!-- Menu categories -->
+        <menuitem name="Menu 1" id="owl_menu_1" parent="owl_menu_root"/>
+
+        <!-- Actions linked to menus -->
+        <menuitem name="OWL Menu"
+                  id="owl_menu_1_action"
+                  parent="owl_menu_1"
+                  action="owl.action_window"
+                  sequence="10"/>
+
+        <!-- Uncomment below if you want a separate list action under Menu 1 -->
+        <!-- <menuitem name="List" id="owl_menu_1_list" parent="owl_menu_1" action="owl.action_window"/> -->
+
+    </data>
+</odoo>

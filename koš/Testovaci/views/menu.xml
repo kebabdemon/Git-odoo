@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+    <menuitem id="test_menu" name="Test"/>
+<!--    <menuitem id="sub_test_menu" name="SubTest" parent="test_menu" action="testovaci_produkt_tlacitko"/>-->
+
+
+
+
+
+</odoo>

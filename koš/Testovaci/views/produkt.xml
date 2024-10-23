@@ -1,0 +1,103 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<odoo>-->
+
+<!--    <record id="view_testovaci_produkt_list" model="ir.ui.view">-->
+<!--        <field name="name">test.produkt.list</field>-->
+<!--        <field name="model">test.produkt</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <list string="List" class="o_tree_custom">-->
+
+<!--                <field name="jmeno" string="Název Produktu" widget="char"-->
+<!--                       style="font-weight: bold; color: #2c3e50; font-size: 16px;"/>-->
+
+
+<!--                <field name="scislo" string="Sériové Číslo" widget="char" style="color: #3498db; font-size: 14px;"-->
+<!--                       optional="show"/>-->
+
+
+<!--                <field name="typ" string="Type" widget="char"-->
+<!--                       style="font-style: italic; color: #7f8c8d; font-size: 14px;" optional="hide"/>-->
+
+<!--            </list>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="view_testovaci_produkt_form" model="ir.ui.view">-->
+<!--        <field name="name">test.produkt.form</field>-->
+<!--        <field name="model">test.produkt</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="Produkt" class="o_form_custom">-->
+
+<!--                <sheet>-->
+<!--                    <div style="background: linear-gradient(135deg, #3498db, #8e44ad);-->
+<!--                                padding: 20px;-->
+<!--                                border-radius: 10px;-->
+<!--                                color: white;-->
+<!--                                text-align: center;-->
+<!--                                margin-bottom: 20px;">-->
+<!--                        <span class="fa fa-cube" style="font-size: 40px; vertical-align: middle;"></span>-->
+<!--                        <span style="font-size: 30px; font-weight: bold; margin-left: 15px;">-->
+<!--                            <field name="jmeno" style="color: white;"/>-->
+<!--                        </span>-->
+<!--                        <br/>-->
+
+<!--                        <small style="font-size: 18px; font-weight: 300; opacity: 0.9;">Název</small>-->
+<!--                    </div>-->
+
+<!--                    <group>-->
+<!--                        <group string="Detaily" class="o_group_custom" colspan="2">-->
+<!--                            <div class="row" style="padding: 15px;">-->
+<!--                                <div class="col-6">-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label for="scislo">Sériové Číslo</label>-->
+<!--                                        <div class="input-group">-->
+<!--                                            <span class="input-group-text">-->
+<!--                                                <i class="fa fa-hashtag"></i>-->
+<!--                                            </span>-->
+<!--                                            <field name="scislo" class="form-control"/>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                                <div class="col-6">-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label for="typ"><Typ></Typ></label>-->
+<!--                                        <div class="input-group">-->
+<!--                                            <span class="input-group-text">-->
+<!--                                                <i class="fa fa-cubes"></i>-->
+<!--                                            </span>-->
+<!--                                            <field name="typ" class="form-control"/>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </group>-->
+<!--                    </group>-->
+
+
+<!--                    <div class="oe_chatter o_chat_custom"-->
+<!--                         style="background-color: #f8f9fa; border-radius: 8px; padding: 10px;">-->
+<!--                        <h4 style="color: #2c3e50;">Logs</h4>-->
+<!--                        <div class="o_chat">-->
+<!--                            <field name="message_ids" widget="mail_thread"/>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="testovaci_produkt_tlacitko" model="ir.actions.act_window">-->
+<!--        <field name="name">Produkty</field>-->
+<!--        <field name="res_model">test.produkt</field>-->
+<!--        <field name="view_mode">list,form</field>-->
+<!--        <field name="help" type="html">-->
+<!--            <p class="o_view_nocontent_smiling_face">-->
+<!--                Vytvořte nový produkt !-->
+<!--            </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--</odoo>-->
